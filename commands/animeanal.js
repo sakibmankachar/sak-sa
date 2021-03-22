@@ -1,5 +1,5 @@
 module.exports = {
-  name: "animecum",
+  name: "animeanal",
 
   code: `
 
