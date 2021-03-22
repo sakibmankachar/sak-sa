@@ -356,65 +356,13 @@ $endelseif
 
 $elseif[$message[1]==animefuck]
 
-$addfield[animefuck;\`Want Some fuck gifs of animes? Usage: s.animefuck]
-
+$addfield[animefuck;\`Want Some fuck gifs of animes? Usage: s.animefuck\`]
 $endelseif
-
-elseif[$message[1]==animecum]
-
-$addfield[animecum;\`Want Some cum images or gifs of animes? Usage: s.animecum]
-
-$endelseif
-
-elseif[$message[1]==animeanal]
-
-$addfield[animeanal;\`Want Some Anal images or gifs of animes? Usage: s.animeanal]
-
-$endelseif
-
-$elseif[$message[1]==animefuck]
-
-$addfield[animefuck;\`Want Some fuck gifs of animes? Usage: s.animefuck]
-
-$endelseif
-
-elseif[$message[1]==animecum]
-
-$addfield[animecum;\`Want Some cum images or gifs of animes? Usage: s.animecum]
-
-$endelseif
-
-elseif[$message[1]==animeanal]
-
-$addfield[animeanal;\`Want Some Anal images or gifs of animes? Usage: s.animeanal]
-
-$endelseif
-
-$elseif[$message[1]==animefuck]
-
-$addfield[animefuck;\`Want Some fuck gifs of animes? Usage: s.animefuck]
-
-$endelseif
-
-elseif[$message[1]==animecum]
-
-$addfield[animecum;\`Want Some cum images or gifs of animes? Usage: s.animecum]
-
-$endelseif
-
-elseif[$message[1]==animeanal]
-
-$addfield[animeanal;\`Want Some Anal images or gifs of animes? Usage: s.animeanal]
-
-$endelseif
-
-$addfield[animefuck;\`Want Some fuck gifs of animes? Usage: s.animefuck]
-$endelseif
-elseif[$message[1]==animecum]
-$addfield[animecum;\`Want Some cum images or gifs of animes? Usage: s.animecum]
+$elseif[$message[1]==animecum]
+$addfield[animecum;\`Want Some cum images or gifs of animes? Usage: s.animecum\`]
 $endelseif
 elseif[$message[1]==animeanal]
-$addfield[animeanal;\`Want Some Anal images or gifs of animes? Usage: s.animeanal]
+$addfield[animeanal;\`Want Some Anal images or gifs of animes? Usage: s.animeanal\`]
 $endelseif
 
  $endif
