@@ -23,7 +23,7 @@ Available Command list:
 \`s.help NSFW\`
 💲**Economy**
 \`s.help Economy\`
-⬆️**Leveling and Ranking**
+⬆️**Leveling_and_Ranking**
 \`s.help Leveling and Ranking\`
 🗨️**Misc**
 \`s.help Misc\`
@@ -33,7 +33,7 @@ Available Command list:
 \`s.help Extra\`
 ***If you need any support or advance help. Then you could join my official discord server.*** [Click Here\\](https://discord.gg/96BqdnWvh8)
 ;yes]
- $elseif[$message[1]==Leveling and Ranking]
+ $elseif[$message[1]==Leveling_and_Ranking]
  $author[$userTag[$clientID];$userAvatar[$clientID]]
  $addField[⬆️Leveling and Ranking;\`rank, setrankmsg, resetrank, setrank\`]
  $endelseIf
@@ -62,7 +62,7 @@ $endelseIf
  $addField[🎮Game;\`rps, roulette(under development), slots\`]
  $endelseIf
  $elseif[$message[1]==NSFW]
- $addField[🔞NSFW;||\`pussy, boob, ass, porn, animecum, animefuck, animeanal\`||]
+ $addField[🔞NSFW;||\`pussy, boob, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs, neko\`||]
  $endelseIf
  $elseif[$message[1]==Action]
  $addField[😀RolePlay;\`pat, smile, wave, hug, kiss, blush\`]
@@ -198,7 +198,7 @@ $addfield[🔨**Moderate**;\`ban, kick, unban, muted, unmuted, warn, unwarn, che
 $addfield[🗒️**Logs**;\`setwelcome, setleave\`]
 $addfield[🎮**Game**;\`rps, roulette (under development), slots\`]
 $addfield[😀**RolePlay**;\`pat, blush, wave, hug, kiss\`]
-$addfield[🔞**NSFW**;||\`boob, pussy, ass, porn, animecum, animefuck, animeanal\`||]
+$addfield[🔞**NSFW**;||\`boob, pussy, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs, neko\`||]
 $addfield[💲**Economy**;\`work, rob, balance, deposit, withdraw\`]
 $addfield[⬆️**Leveling and Ranking**;\`setrank, rank, setrankmsg, resetrank\`]
 $addfield[🗨️**Misc**;\`ping, avatar, help, helproulettle\`]
@@ -207,7 +207,7 @@ $addfield[✍️ Type-Role;\`setroleon, setroleoff, setrolelog, resetrolelog\`]
 $addfield[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole\`]
 $addfield[Support;**If you need any support or advance help. Then you could join my official discord server. ** [Click Here\\](https://discord.gg/96BqdnWvh8)]
 $endelseif
- $elseif[$message[1]==leveling and ranking]
+ $elseif[$message[1]==leveling_and_ranking]
 
  $author[$userTag[$clientID];$userAvatar[$clientID]]
 
@@ -265,7 +265,7 @@ $endelseIf
 
  $elseif[$message[1]==nsfw]
 
- $addField[🔞NSFW;||\`pussy, boob, ass, porn, animecum, animefuck, animeanal\`||]
+ $addField[🔞NSFW;||\`pussy, boob, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs, neko\`||]
 
  $endelseIf
 
@@ -288,7 +288,7 @@ $addfield[🎮**Game**;\`rps, roulette (under development), slots\`]
 
 $addfield[😀**RolePlay**;\`pat, blush, wave, hug, kiss\`]
 
-$addfield[🔞**NSFW**;||\`boob, pussy, ass, porn, animecum, animefuck, animeanal\`||]
+$addfield[🔞**NSFW**;||\`boob, pussy, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs, neko\`||]
 
 $addfield[💲**Economy**;\`work, rob, balance, deposit, withdraw\`]
 
