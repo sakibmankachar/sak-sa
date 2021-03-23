@@ -1,7 +1,7 @@
 module.exports = {
   name: "animefuck",
 
-  code: `
+  code: `$onlyNSFW[❌ This Command Can be Only Run in NSFW Channel]
   $if[$getGlobalUserVar[voteaccess]==True]
 
 $image[$jsonRequest[https://api.willz.repl.co/anime/fuck;gif]]

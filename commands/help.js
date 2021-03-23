@@ -23,8 +23,8 @@ Available Command list:
 \`s.help NSFW\`
 💲**Economy**
 \`s.help Economy\`
-⬆️**Leveling_and_Ranking**
-\`s.help Leveling and Ranking\`
+⬆️**Leveling and Ranking**
+\`s.help Leveling_and_Ranking\`
 🗨️**Misc**
 \`s.help Misc\`
 😂 **Fun**
