@@ -1,10 +1,10 @@
 module.exports = {
   name: "boob",
-  code: `$If[$getUserVar[voteaccess]==False]
+  code: `$If[$getGlobalUserVar[voteaccess]==False]
 ❌You have to vote Me to access This Command.
 https://top.gg/bot/$clientID/vote
 After Voting type s.voteaccess
-$elseif[$getuservar[voteaccess]==True]
+$elseif[$getGlobaluservar[voteaccess]==True]
 $color[ff0000]
 $description[**Here Some Boobs From Me**]
 $onlyNSFW[❌This command can only be used in the NSFW channel]
