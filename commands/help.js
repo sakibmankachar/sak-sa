@@ -356,15 +356,30 @@ $endelseif
 
 $elseif[$message[1]==animefuck]
 
-$addfield[animefuck;\`Want Some fuck gifs of animes? Usage: s.animefuck\`]
+$addfield[animefuck;||\`Want Some fuck gifs of animes? Usage: s.animefuck\`||]
 $endelseif
 $elseif[$message[1]==animecum]
-$addfield[animecum;\`Want Some cum images or gifs of animes? Usage: s.animecum\`]
+$addfield[animecum;||\`Want Some cum images or gifs of animes? Usage: s.animecum\`||]
 $endelseif
 $elseif[$message[1]==animeanal]
-$addfield[animeanal;\`Want Some Anal images or gifs of animes? Usage: s.animeanal\`]
+$addfield[animeanal;||\`Want Some Anal images or gifs of animes? Usage: s.animeanal\`||]
+$endelseif
+$elseif[$message[1]==animepussy]
+
+$addfield[animepussy;||\`Want pussy gif or images from anime? Usage: s.animepussy\`||]
+
 $endelseif
 
+$elseif[$message[1]==animeboobs]
+
+$addfield[animeboobs;||\`Want boobs gif or images from anime? Usage: s.animeboobs\`||]
+
+$endelseif
+
+$elseif[$message[1]==neko]
+
+$addfield[neko;||\`Want neko images from anime? Usage: s.neko\`||]
+$endelseif
  $endif
 `
 };
