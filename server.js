@@ -2,7 +2,7 @@ var dbd = require("dbd.js");
 var fs = require("fs");
 var bot = new dbd.Bot({
   token: process.env.BOT_TOKEN,
-  prefix: ['<@$clientID>','$getServerVar[prefix]']
+  prefix: ["<@$clientID>", "$getServerVar[prefix]"]
 });
 
 bot.onMessage();
@@ -55,7 +55,9 @@ bot.variables({
   voteaccess: "True",
   apikey: process.env.DBLTOKEN,
   role: "off",
-  rolelog: ""
+  rolelog: "",
+  errorcol: "RED",
+color: "GREEN"
 });
 
 bot.joinCommand({
@@ -81,4 +83,10 @@ $color[ff0000]
 $description[$username was caught attempting to rob $username[mentioned[1]] and had to pay $random[1;$getUserVar[money;mentioned[1]]] as a fine]
 $author[$username;$authorAvatar]
 `
+});
+
+bot.awaitedCommand({
+  name: "awaitEval",
+
+  code: `$deleteMessage[$message[1]]`
 });
