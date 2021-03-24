@@ -382,7 +382,11 @@ $addfield[neko;||\`Want neko images from anime? Usage: s.neko\`||]
 
 $endelseif
 
-$elseif[$message[1]
+$elseif[$message[1]==weather]
+
+$addfield[weather;\`Get Weather of the Country Or city. Usage: s.weather <city/countryname>\`]
+
+$endelseif
 
 $else
 
