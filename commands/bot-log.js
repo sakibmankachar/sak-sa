@@ -1,5 +1,5 @@
 module.exports = {
-  name: "s.$message",
+  name: "s.",
 
   nonPrefixed: true,
 
