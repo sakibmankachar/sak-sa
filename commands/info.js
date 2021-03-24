@@ -59,5 +59,5 @@ $userPerms[$findUser[$message]]
 
 $color[00FCFF]`,
 
-  aliases: ["who", "whois", "user", "userinfo"]
+  aliases: ['who','whois','user','userinfo']
 };
