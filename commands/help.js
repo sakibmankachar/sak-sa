@@ -44,7 +44,7 @@ $elseif[$message[1]==Fun]
  $addField[😂Fun;\`meme\`]
  $endelseIf
 $elseif[$message[1]==Extra]
- $addField[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole\`]
+ $addField[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather\`]
  $endelseIf
  $elseif[$message[1]==AutoMod]
  $addField[⚒️ AutoMod;\`autoModon, autoModoff\`]
@@ -204,7 +204,7 @@ $addfield[⬆️**Leveling and Ranking**;\`setrank, rank, setrankmsg, resetrank\
 $addfield[🗨️**Misc**;\`ping, avatar, help, helproulettle\`]
 $addfield[😂**Fun**;\`meme\`]
 $addfield[✍️ Type-Role;\`setroleon, setroleoff, setrolelog, resetrolelog\`]
-$addfield[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole\`]
+$addfield[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather\`]
 $addfield[Support;**If you need any support or advance help. Then you could join my official discord server. ** [Click Here\\](https://discord.gg/96BqdnWvh8)]
 $endelseif
  $elseif[$message[1]==leveling_and_ranking]
@@ -229,7 +229,7 @@ $elseif[$message[1]==fun]
 
 $elseif[$message[1]==extra]
 
- $addField[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole\`]
+ $addField[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather\`]
 
  $endelseIf
 
@@ -298,7 +298,7 @@ $addfield[🗨️**Misc**;\`ping, avatar, help, helproulettle\`]
 
 $addfield[😂**Fun**;meme]
 
-$addfield[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole\`]
+$addfield[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather\`]
 
 $addfield[✍️ Type-Role;\`resetrolelog, setrolelog, setroleon, setroleoff\`]
 
@@ -380,11 +380,14 @@ $elseif[$message[1]==neko]
 
 $addfield[neko;||\`Want neko images from anime? Usage: s.neko\`||]
 
+$endelseif
+
+$elseif[$message[1]
+
 $else
 
 **❌Invaild Commandlist or Command Name**
 
-$endelseif
  $endif
 `
 };
