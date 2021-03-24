@@ -379,6 +379,11 @@ $endelseif
 $elseif[$message[1]==neko]
 
 $addfield[neko;||\`Want neko images from anime? Usage: s.neko\`||]
+
+$else
+
+**❌Invaild Commandlist or Command Name**
+
 $endelseif
  $endif
 `
