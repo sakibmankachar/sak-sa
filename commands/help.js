@@ -241,7 +241,7 @@ $endelseIf
 
  $elseif[$message[1]==misc]
 
- $addField[🗨 Misc;\`ping, help, helproulettle, avatar\`]
+ $addField[🗨 Misc;\`ping, help, helproulettle, avatar, info\`]
 
  $endelseIf
 
@@ -294,7 +294,7 @@ $addfield[💲**Economy**;\`work, rob, balance, deposit, withdraw\`]
 
 $addfield[⬆️**Leveling and Ranking**;\`setrank, rank, setrankmsg, resetrank\`]
 
-$addfield[🗨️**Misc**;\`ping, avatar, help, helproulettle\`]
+$addfield[🗨️**Misc**;\`ping, avatar, help, helproulettle, info\`]
 
 $addfield[😂**Fun**;meme]
 
@@ -385,6 +385,12 @@ $endelseif
 $elseif[$message[1]==weather]
 
 $addfield[weather;\`Get Weather of the Country Or city. Usage: s.weather <city/countryname>\`]
+
+$endelseif
+
+$elseif[$message[1]==info]
+
+$addfield[info;\`To get the mention user or your info. Usage: s.info <@mention(optional)>]
 
 $endelseif
 
