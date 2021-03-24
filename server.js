@@ -74,18 +74,6 @@ $suppressErrors`
 });
 
 bot.awaitedCommand({
-  name: "AwaitedRobFail",
-  code: `$deletecommand
-$setUserVar[money;$sum[$getUserVar[money;$mentioned[1]];$random[1;$getUserVar[money;$mentioned[1]]]];$mentioned[1]]
-$setUserVar[money;$sub[$getUserVar[money]]$random[1;$getUserVar[money;$mentioned[1]]]]]
-$title[Busted!]
-$color[ff0000]
-$description[$username was caught attempting to rob $username[mentioned[1]] and had to pay $random[1;$getUserVar[money;mentioned[1]]] as a fine]
-$author[$username;$authorAvatar]
-`
-});
-
-bot.awaitedCommand({
   name: "awaitEval",
 
   code: `$deleteMessage[$message[1]]`
