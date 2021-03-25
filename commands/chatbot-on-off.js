@@ -1,5 +1,5 @@
 module.exports = {
-  name: "chatbotoption",
+  name: "setchatbot",
 
   code: `
 
