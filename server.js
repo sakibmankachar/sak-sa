@@ -57,8 +57,7 @@ bot.variables({
   role: "off",
   rolelog: "",
   errorcol: "RED",
-  color: "GREEN",
-  chatbot: "off"
+  color: "GREEN"
 });
 
 bot.joinCommand({
