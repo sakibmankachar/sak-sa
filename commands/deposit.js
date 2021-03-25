@@ -10,8 +10,8 @@ $author[$username;$authorAvatar]
 $suppressError[Not a Vaild Number!]
 $elseif[$message==all]
 $addfield[Deposit;**You have Deposited everything into bank**]
-$setUserVar[bank;$sum[$getUserVar[bank;$authorID];$getUserVar[bank;$authorID]];$authorID]
-$setUserVar[money;$sub[$getServerVar[money;$authorID];$getServerVar[money;$authorID]];$authorID]
+$setUserVar[bank;$sub[$getUserVar[money;$authorID];$getUserVar[money;$authorID]];$authorID]
+$setUserVar[money;$sum[$getServerVar[bank;$authorID];$getServerVar[money;$authorID]];$authorID]
 $endelseif
 $endif
 $onlyIf[$message<=$getUserVar[money;$authorID];That amount is higher than the amount in your wallet!]
