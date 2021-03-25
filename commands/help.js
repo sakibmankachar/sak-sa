@@ -64,7 +64,7 @@ $endelseIf
  $elseif[$message[1]==NSFW]
  $addField[🔞NSFW;||\`pussy, boob, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs, neko\`||]
  $endelseIf
- $elseif[$message[1]==Action]
+ $elseif[$message[1]==RolePlay]
  $addField[😀RolePlay;\`pat, smile, wave, hug, kiss, blush\`]
  $endelseIf
  $elseif[$message[1]==autoModon]
@@ -269,7 +269,7 @@ $endelseIf
 
  $endelseIf
 
- $elseif[$message[1]==action]
+ $elseif[$message[1]==roleplay]
 
  $addField[😀RolePlay;\`pat, smile, wave, hug, kiss, blush\`]
 
@@ -396,7 +396,7 @@ $endelseif
 
 $else
 
-**❌Invaild Commandlist or Command Name**
+$addfield[Error;**❌Invaild Commandlist or Command Name**]
 
  $endif
 `
