@@ -27,7 +27,7 @@ $onlyIf[$message[2]!=;{title:Looking For Arguments}{description:You have not put
 
 - $getServerVar[prefix]giveaway <time> <prize>.\`\`\`
 
-\`Arguments with<> are required \`
+\`Arguments with <> are required \`
 
 }{color:ORANGE}]
 

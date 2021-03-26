@@ -44,7 +44,7 @@ $elseif[$message[1]==Fun]
  $addField[😂Fun;\`meme\`]
  $endelseIf
 $elseif[$message[1]==Extra]
- $addField[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather\`]
+ $addField[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather, giveaway\`]
  $endelseIf
  $elseif[$message[1]==AutoMod]
  $addField[⚒️ AutoMod;\`autoModon, autoModoff\`]
@@ -204,7 +204,7 @@ $addfield[⬆️**Leveling and Ranking**;\`setrank, rank, setrankmsg, resetrank\
 $addfield[🗨️**Misc**;\`ping, avatar, help, helproulettle, info\`]
 $addfield[😂**Fun**;\`meme\`]
 $addfield[✍️ Type-Role;\`setroleon, setroleoff, setrolelog, resetrolelog\`]
-$addfield[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather\`]
+$addfield[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather, giveaway\`]
 $addfield[Support;**If you need any support or advance help. Then you could join my official discord server. ** [Click Here\\](https://discord.gg/96BqdnWvh8)]
 $endelseif
  $elseif[$message[1]==leveling_and_ranking]
@@ -229,7 +229,7 @@ $elseif[$message[1]==fun]
 
 $elseif[$message[1]==extra]
 
- $addField[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather\`]
+ $addField[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather, giveaway\`]
 
  $endelseIf
 
@@ -298,7 +298,7 @@ $addfield[🗨️**Misc**;\`ping, avatar, help, helproulettle, info\`]
 
 $addfield[😂**Fun**;meme]
 
-$addfield[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather\`]
+$addfield[✔️Extra;\`guide, JALLOGS guide, covid19, invite, giverole, givexrole, weather, giveaway\`]
 
 $addfield[✍️ Type-Role;\`resetrolelog, setrolelog, setroleon, setroleoff\`]
 
@@ -393,6 +393,10 @@ $elseif[$message[1]==info]
 $addfield[info;\`To get the mention user or your info. Usage: s.info <@mention(optional)>]
 
 $endelseif
+
+$elseif[$message[1]==giveaway]
+
+$addfield[giveaway;\`To give giveaway. Usage: s.giveaway <time{(number)s/m/hr/d
 
 $else
 
