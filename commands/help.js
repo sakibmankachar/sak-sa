@@ -390,13 +390,15 @@ $endelseif
 
 $elseif[$message[1]==info]
 
-$addfield[info;\`To get the mention user or your info. Usage: s.info <@mention(optional)>]
+$addfield[info;\`To get the mention user or your info. Usage: s.info <@mention(optional)>\`]
 
 $endelseif
 
 $elseif[$message[1]==giveaway]
 
-$addfield[giveaway;\`To give giveaway. Usage: s.giveaway <time{(number)s/m/hr/d
+$addfield[giveaway;\`To give giveaway. Usage: s.giveaway <time{(number)s/m/h/d}> <prize>\`]
+
+$endelseif
 
 $else
 
