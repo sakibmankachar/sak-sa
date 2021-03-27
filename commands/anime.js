@@ -1,49 +1,47 @@
-//ANIME INFO
-
 module.exports = {
-  name: "anime",
 
-  description: "Search anime info via title",
+name:"anime", 
 
-  usage: "anime <anime title>",
+description: "Search anime info via title",
 
-  code: `
+usage: "anime <anime title>",
 
-$title[$jsonRequest[https://api.avux.ga/animesearch?text=$message;text.titles.romaji;] / $jsonRequest[https://api.avux.ga/animesearch?text=$message;text.titles.japanese;] ]
+code:`
+
+$title[$jsonRequest[https://api.avux.ga/animesearch?text=$message;text.titles.romaji;] / $jsonRequest[https://api.avux.ga/animesearch?search=$message;text.titles.japanese;] ]
 
 $description[
 
 📅 Published\`\`\`
 
-$jsonRequest[https://api.avux.ga/animesearch?text=$message;text.startDate;] - $jsonRequest[https://api.avux.ga/animesearch?text=$message;text.endDate;]\`\`\`
+$jsonRequest[https://api.avux.ga/animesearch?search=$message;text.startDate;] - $jsonRequest[https://api.avux.ga/animesearch?search=$message;text.endDate;]\`\`\`
 
 📖 Episode\`\`\`
 
-$jsonRequest[https://api.avux.ga/animesearch?text=$message;text.episodeCount;] Episode\`\`\`
+$jsonRequest[https://api.avux.ga/animesearch?search=$message;text.episodeCount;] Episode\`\`\`
 
 ⭐ Rating\`\`\`
 
-$jsonRequest[https://api.avux.ga/animesearch?text=$message;text.averageRating;]\`\`\`
+$jsonRequest[https://api.avux.ga/animesearch?search=$message;text.averageRating;]\`\`\`
 
 🏆 Popularity Rank\`\`\`
 
-$jsonRequest[https://api.avux.ga/animesearch?text=$message;text.popularityRank;]\`\`\`
+$jsonRequest[https://api.avux.ga/animesearch?search=$message;text.popularityRank;]\`\`\`
 
 📜 Synopsis\`\`\`
 
-$jsonRequest[https://api.avux.ga/animesearch?text=$message;text.synopsis;]\`\`\`
+$jsonRequest[https://api.avux.ga/animesearch?search=$message;text.synopsis;]\`\`\`
 
 ]
 
 $color[RANDOM]
 
-$image[$jsonRequest[https://api.avux.ga/animesearch?text=$message;text.posterImage.medium;]]
+$image[$jsonRequest[https://api.avux.ga/animesearch?search=$message;text.posterImage.medium;]]
 
 $footer[Requested By $username[$authorID];$authorAvatar]
 
 $addTimestamp
 
-$onlyIf[$message[1]!=;You need to put Anime name]
+$onlyIf[$message[1]!=;You need to put Anime name]`
 
-`
 };
