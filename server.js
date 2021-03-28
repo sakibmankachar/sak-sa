@@ -58,7 +58,9 @@ bot.variables({
   rolelog: "",
   errorcol: "RED",
   color: "GREEN",
-  giveaway: ""
+  giveaway: "",
+  statusmsg: "",
+  statusch: ""
 });
 
 bot.joinCommand({
@@ -78,4 +80,14 @@ bot.awaitedCommand({
   name: "awaitEval",
 
   code: `$deleteMessage[$message[1]]`
+});
+
+bot.awaitedCommand({
+  name: "status",
+
+  code: `$editMessage[$getServerVar[statusmsg];{title:Status:}{thumbnail:$userAvatar[$splitText[1]]}{color:$replaceText[$replaceText[$replaceText[$replaceText[$status[$splitText[1]];online;GREEN];offline;RED];idle;YELLOW];dnd;ORANGE]}{field:$username[$splitText[1]]:$replaceText[$replaceText[$replaceText[$replaceText[$status[$splitText[1]];offline;:red_circle: **\`Offline.\`**];online;:green_circle: **\`Online.\`**];dnd;:orange_circle: **\`Do not disturbe.\`**];idle;:yellow_circle: **\`Idle.\`**]:no}{field:Latency:\`$ping\`:yes}{field:RAM:\`$roundTenth[$ram;3]\`:yes}{field:CPU:\`$roundTenth[$ram;3]\`:yes}{field:Developers:***$userTag[$splitText[2]]*** **|** $replaceText[$replaceText[$replaceText[$replaceText[$status[$splitText[2]];offline;:red_circle: **\`Offline.\`**];online;:green_circle: **\`Online.\`**];dnd;:orange_circle: **\`Do not disturbe.\`**];idle;:yellow_circle: **\`Idle.\`**]}{footer:Status:$userAvatar[$splitText[1]]}{timestamp}{author:$userTag[$splitText[1]]:$userAvatar[$splitText[1]]};$getServerVar[statusch]]
+
+$textSplit[804720808182022245,769525910164471821;,]
+
+$wait[1m]`
 });
