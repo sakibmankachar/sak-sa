@@ -1,5 +1,5 @@
 module.exports = {
-  name: "neko",
+  name: "12345nekos",
 
   code: `
   $onlyNSFW[❌ This Command Can be Only Run in NSFW Channel]

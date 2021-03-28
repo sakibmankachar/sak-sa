@@ -62,7 +62,7 @@ $endelseIf
  $addField[🎮Game;\`rps, roulette(under development), slots\`]
  $endelseIf
  $elseif[$message[1]==NSFW]
- $addField[🔞NSFW;||\`pussy, boob, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs, neko\`||]
+ $addField[🔞NSFW;||\`pussy, boob, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs\`||]
  $endelseIf
  $elseif[$message[1]==RolePlay]
  $addField[😀RolePlay;\`pat, smile, wave, hug, kiss, blush\`]
@@ -198,7 +198,7 @@ $addfield[🔨**Moderate**;\`ban, kick, unban, muted, unmuted, warn, unwarn, che
 $addfield[🗒️**Logs**;\`setwelcome, setleave\`]
 $addfield[🎮**Game**;\`rps, roulette (under development), slots\`]
 $addfield[😀**RolePlay**;\`pat, blush, wave, hug, kiss\`]
-$addfield[🔞**NSFW**;||\`boob, pussy, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs, neko\`||]
+$addfield[🔞**NSFW**;||\`boob, pussy, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs\`||]
 $addfield[💲**Economy**;\`work, rob, balance, deposit, withdraw\`]
 $addfield[⬆️**Leveling and Ranking**;\`setrank, rank, setrankmsg, resetrank\`]
 $addfield[🗨️**Misc**;\`ping, avatar, help, helproulettle, info\`]
@@ -265,7 +265,7 @@ $endelseIf
 
  $elseif[$message[1]==nsfw]
 
- $addField[🔞NSFW;||\`pussy, boob, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs, neko\`||]
+ $addField[🔞NSFW;||\`pussy, boob, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs\`||]
 
  $endelseIf
 
@@ -288,7 +288,7 @@ $addfield[🎮**Game**;\`rps, roulette (under development), slots\`]
 
 $addfield[😀**RolePlay**;\`pat, blush, wave, hug, kiss\`]
 
-$addfield[🔞**NSFW**;||\`boob, pussy, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs, neko\`||]
+$addfield[🔞**NSFW**;||\`boob, pussy, ass, porn, animecum, animefuck, animeanal, animepussy, animeboobs\`||]
 
 $addfield[💲**Economy**;\`work, rob, balance, deposit, withdraw\`]
 
@@ -376,7 +376,7 @@ $addfield[animeboobs;||\`Want boobs gif or images from anime? Usage: s.animeboob
 
 $endelseif
 
-$elseif[$message[1]==neko]
+$elseif[$message[1]==12345nekos]
 
 $addfield[neko;||\`Want neko images from anime? Usage: s.neko\`||]
 
