@@ -9,11 +9,6 @@ bot.onMessage();
 bot.onLeave();
 bot.onJoined();
 
-Dashboard.API({
-
- p
-
-
 var reader = fs.readdirSync(`./commands`).filter(file => file.endsWith(".js"));
 for (const file of reader) {
   const command = require(`./commands/${file}`);
