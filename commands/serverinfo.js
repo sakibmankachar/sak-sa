@@ -1,7 +1,7 @@
 module.exports = {
   name: "Serverinfo",
 
-  alliases: ["guildinfo", "serverinformation"],
+  alliases: ['guildinfo'']
 
   code: `
 
@@ -43,7 +43,7 @@ ID = $serverOwner
 
 🔸 Emote : $emoteCount
 
-🔸 Top Role : $roleName[$highestRole[$authorID]
+🔸 Top Role : $roleName[$highestRole[$authorID]]
 
 ID = $highestRole 
 
