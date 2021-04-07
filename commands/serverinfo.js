@@ -1,57 +1,75 @@
-//Simple Better Server Info Command
-
 module.exports = {
-  name: "serverinfo",
+  name: "Serverinfo",
 
-  aliases: ["serverprofile", "server"],
+  alliases: ["guildinfo", "serverinformation"],
 
-  code: `$title[$serverName[$guildID]'s Info]
+  code: `
 
-$thumbnail[$serverIcon[$guildID]]
+$channelSendMessage[$channelID;Wait for 6-7 second for to load!]
 
-$description[**Name**
+$thumbnail[$serverIcon?size=2048]
 
-$serverName[$guildID]
+$title[Server] 
 
-**ID**
+$description[🔸 ID Server : $guildID
 
-$guildID
+🔸 Name Server : $serverName[$guildID]
 
-**Owner**
+🔸 Create Server : $creationDate[$guildID]
 
-<@$ownerID>
+🔸 Icon : $replaceText[$replaceText[$isAdmin[(your bot id)];false;❌ No Results;1];true;$serverIcon?size=2048;1]
 
-**Region**
+🔸 ID Icon : $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$splitText[6];.png; ;1];.gif; ;1];.jpg; ;1];.bmp; ;1];.tiff; ;1];.ico; ;1]
 
-$serverRegion
+🔸 Member : $membersCount
 
-**Boosts**
+🔸 Online : $membersCount[online]
 
-$serverBoostCount
+🔸 Idle : $membersCount[idle]
 
-**Boost Level**
+🔸 DnD : $membersCount[dnd]
 
-$serverBoostCount
+🔸 Offline : $sub[$membersCount;$membersCount[online];$membersCount[idle];$membersCount[dnd]]
 
-**Boost Level**
+🔸 Owner : $username[$serverOwner]#$discriminator[$serverOwner]
 
-$serverBoostLevel
+ID = $serverOwner
 
-**Verification Level**
+🔸 Region : $serverRegion
 
-$serverVerificationLevel
+🔸 Verification : $serverVerificationLvl
 
-**Total Members**
+🔸 Channel : $channelCount
 
-$membersCount
+🔸 Emote : $emoteCount
 
-**Creation Date**
+🔸 Top Role : $roleName[$highestRole[$authorID]
 
-$creationDate[$guildID]
+ID = $highestRole 
 
-**Emojis**
+Mention = $replaceText[$replaceText[$isMentionable[$highestRole];false;No;1];true;Yes;1]
 
-$serverEmojis]
+Display Role  = $replaceText[$replaceText[$isHoisted[$highestRole];false;No;1];true;Yes;1]
 
-$color[73C2FB]`
+Color = #$getRoleColor[$highestRole]
+
+Create = $creationDate[$highestRole]
+
+Status = $replaceText[$replaceText[$roleExists[$highestRole];false;❌;1];true;✅;1] • $replaceText[$replaceText[$isValidHex[$getRoleColor[$highestRole]];false;❌;1];true;✅;1]
+
+Perms = Kick $replaceText[$replaceText[$checkCondition[$highestRoleWithPerms[kick]==$highestRole];true;✅;1];false;❌;1] Ban $replaceText[$replaceText[$checkCondition[$highestRoleWithPerms[ban]==$highestRole];true;✅;1];false;❌;1] Manage Roles $replaceText[$replaceText[$checkCondition[$highestRoleWithPerms[manageroles]==$highestRole];true;✅;1];false;❌;1] Manage Channel $replaceText[$replaceText[$checkCondition[$highestRoleWithPerms[managechannels]==$highestRole];true;✅;1];false;❌;1] Manage Server $replaceText[$replaceText[$checkCondition[$highestRoleWithPerms[manageserver]==$highestRole];true;✅;1];false;❌;1] Manage Messages $replaceText[$replaceText[$checkCondition[$highestRoleWithPerms[managemessages]==$highestRole];true;✅;1];false;❌;1] Manage Emoji $replaceText[$replaceText[$checkCondition[$highestRoleWithPerms[manageemojis]==$highestRole];true;✅;1];false;❌;1] Add Reactions $replaceText[$replaceText[$checkCondition[$highestRoleWithPerms[addreactions]==$highestRole];true;✅;1];false;❌;1] Send Message $replaceText[$replaceText[$checkCondition[$highestRoleWithPerms[sendmessages]==$highestRole];true;✅;1];false;❌;1]
+
+🔸 Role : $roleCount
+
+= $replaceText[$replaceText[$checkCondition[$argCount[$replaceText[$roleNames;@everyone;Everyone;-1]]>50];false;$replaceText[$roleNames;@everyone;Everyone;-1];1];true;❌ Failed Load It;1]
+
+🔸 $charCount[$replaceText[$roleNames;@everyone;Everyone;-1]] Character Of Role • $argCount[$replaceText[$roleNames;@everyone;Everyone;-1]] Argument Of Role]
+
+$color[00FF00]
+
+$onlyIf[$guildID!=;]
+
+$embedSuppressErrors[;Failed Running.;00ff00;;❌ Error;]
+
+$textSplit[$serverIcon;/]`
 };
